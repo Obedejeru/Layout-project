@@ -1,0 +1,101 @@
+<!-- suspicious_login_error_layout.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/newId"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="cancel1"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/text_suspicious_login_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Suspicious Login Attempt"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- Top bar with suspicious login attempt message -->
+
+    <!-- Image view for the error illustration -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/image_error"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_below="@id/newId"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_boulix"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We Suspect An Unusual login attempt"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whatever info you want to type"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +234 *******65"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Button to validate account -->
+        <Button
+            android:id="@+id/button_validate_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_error"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="16dp"
+            android:text="Validate Account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
